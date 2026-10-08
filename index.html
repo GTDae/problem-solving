@@ -11,8 +11,13 @@
     let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
 
     // Subproblem 2: loop from 1 to the entered number
+    // Subproblem 3: check divisibility by 3
     for (let i = 1; i <= answer; i++) {
-      console.log(i);
+      if (i % 3 === 0) {
+        console.log("Fizz");
+      } else {
+        console.log(i);
+      }
     }
   </script>
 </body>
