@@ -12,9 +12,12 @@
 
     // Subproblem 2: loop from 1 to the entered number
     // Subproblem 3: check divisibility by 3
+    // Subproblem 4: check divisibility by 5
     for (let i = 1; i <= answer; i++) {
       if (i % 3 === 0) {
         console.log("Fizz");
+      } else if (i % 5 === 0) {
+        console.log("Buzz");
       } else {
         console.log(i);
       }
