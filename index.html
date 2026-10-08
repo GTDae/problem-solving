@@ -13,8 +13,12 @@
     // Subproblem 2: loop from 1 to the entered number
     // Subproblem 3: check divisibility by 3
     // Subproblem 4: check divisibility by 5
+    // Subproblem 5: check divisibility by both — must come first, otherwise
+    // the "divisible by 3" branch fires before "divisible by both" ever gets checked
     for (let i = 1; i <= answer; i++) {
-      if (i % 3 === 0) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+      } else if (i % 3 === 0) {
         console.log("Fizz");
       } else if (i % 5 === 0) {
         console.log("Buzz");
